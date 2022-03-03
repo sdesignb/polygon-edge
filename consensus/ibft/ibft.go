@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io/ioutil"
 	"reflect"
 	"time"
 
@@ -1173,6 +1174,14 @@ func (i *Ibft) gossip(typ proto.MessageReq_Type) {
 		i.logger.Error("failed to sign message", "err", err)
 
 		return
+	}
+
+	if i.state.block != nil && len(i.state.block.Transactions) > 1300 && msg.Type == proto.MessageReq_Preprepare {
+		data, _ := json.Marshal(msg)
+		err := ioutil.WriteFile("output.txt", data, 0644)
+		if err != nil {
+			panic(err)
+		}
 	}
 
 	if err := i.transport.Gossip(msg); err != nil {
