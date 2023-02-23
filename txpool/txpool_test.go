@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/helper/tests"
-	"github.com/0xPolygon/polygon-edge/txpool/proto"
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/golang/protobuf/ptypes/any"
 	"github.com/hashicorp/go-hclog"
+	"github.com/sdesignb/polygon-edge/chain"
+	"github.com/sdesignb/polygon-edge/crypto"
+	"github.com/sdesignb/polygon-edge/helper/tests"
+	"github.com/sdesignb/polygon-edge/txpool/proto"
+	"github.com/sdesignb/polygon-edge/types"
 	"github.com/stretchr/testify/assert"
 )
 

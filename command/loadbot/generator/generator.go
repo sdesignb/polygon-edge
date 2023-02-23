@@ -3,7 +3,7 @@ package generator
 import (
 	"crypto/ecdsa"
 	"encoding/json"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/types"
 	"io/ioutil"
 	"math/big"
 )

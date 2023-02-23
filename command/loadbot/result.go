@@ -3,9 +3,9 @@ package loadbot
 import (
 	"bytes"
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	"github.com/0xPolygon/polygon-edge/command/loadbot/generator"
-	"github.com/0xPolygon/polygon-edge/helper/common"
+	"github.com/sdesignb/polygon-edge/command/helper"
+	"github.com/sdesignb/polygon-edge/command/loadbot/generator"
+	"github.com/sdesignb/polygon-edge/helper/common"
 	"github.com/umbracle/go-web3"
 	"math"
 	"sort"

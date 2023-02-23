@@ -2,9 +2,9 @@ package jsonrpc
 
 import (
 	"errors"
-	"github.com/0xPolygon/polygon-edge/blockchain"
-	"github.com/0xPolygon/polygon-edge/state"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/blockchain"
+	"github.com/sdesignb/polygon-edge/state"
+	"github.com/sdesignb/polygon-edge/types"
 	"math/big"
 	"sync"
 )

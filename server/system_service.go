@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/0xPolygon/polygon-edge/blockchain"
-	"github.com/0xPolygon/polygon-edge/network"
-	"github.com/0xPolygon/polygon-edge/server/proto"
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/libp2p/go-libp2p-core/peer"
+	"github.com/sdesignb/polygon-edge/blockchain"
+	"github.com/sdesignb/polygon-edge/network"
+	"github.com/sdesignb/polygon-edge/server/proto"
+	"github.com/sdesignb/polygon-edge/types"
 	empty "google.golang.org/protobuf/types/known/emptypb"
 )
 

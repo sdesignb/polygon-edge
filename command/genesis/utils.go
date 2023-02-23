@@ -2,11 +2,11 @@ package genesis
 
 import (
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/command"
-	"github.com/0xPolygon/polygon-edge/consensus/ibft"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/chain"
+	"github.com/sdesignb/polygon-edge/command"
+	"github.com/sdesignb/polygon-edge/consensus/ibft"
+	"github.com/sdesignb/polygon-edge/crypto"
+	"github.com/sdesignb/polygon-edge/types"
 	"io/ioutil"
 	"os"
 	"path/filepath"

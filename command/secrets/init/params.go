@@ -3,12 +3,12 @@ package init
 import (
 	"crypto/ecdsa"
 	"errors"
-	"github.com/0xPolygon/polygon-edge/command"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/secrets"
-	"github.com/0xPolygon/polygon-edge/secrets/helper"
 	libp2pCrypto "github.com/libp2p/go-libp2p-core/crypto"
 	"github.com/libp2p/go-libp2p-core/peer"
+	"github.com/sdesignb/polygon-edge/command"
+	"github.com/sdesignb/polygon-edge/crypto"
+	"github.com/sdesignb/polygon-edge/secrets"
+	"github.com/sdesignb/polygon-edge/secrets/helper"
 )
 
 const (

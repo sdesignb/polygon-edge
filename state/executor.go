@@ -8,10 +8,10 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/state/runtime"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/chain"
+	"github.com/sdesignb/polygon-edge/crypto"
+	"github.com/sdesignb/polygon-edge/state/runtime"
+	"github.com/sdesignb/polygon-edge/types"
 )
 
 const (

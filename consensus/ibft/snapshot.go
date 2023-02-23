@@ -10,9 +10,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/0xPolygon/polygon-edge/consensus/ibft/proto"
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/hashicorp/go-hclog"
+	"github.com/sdesignb/polygon-edge/consensus/ibft/proto"
+	"github.com/sdesignb/polygon-edge/types"
 )
 
 // setupSnapshot sets up the snapshot store for the IBFT object

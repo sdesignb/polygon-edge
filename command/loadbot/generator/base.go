@@ -1,7 +1,7 @@
 package generator
 
 import (
-	"github.com/0xPolygon/polygon-edge/crypto"
+	"github.com/sdesignb/polygon-edge/crypto"
 	"sync"
 )
 

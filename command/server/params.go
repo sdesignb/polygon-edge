@@ -2,12 +2,12 @@ package server
 
 import (
 	"errors"
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/network"
-	"github.com/0xPolygon/polygon-edge/secrets"
-	"github.com/0xPolygon/polygon-edge/server"
 	"github.com/hashicorp/go-hclog"
 	"github.com/multiformats/go-multiaddr"
+	"github.com/sdesignb/polygon-edge/chain"
+	"github.com/sdesignb/polygon-edge/network"
+	"github.com/sdesignb/polygon-edge/secrets"
+	"github.com/sdesignb/polygon-edge/server"
 	"net"
 )
 

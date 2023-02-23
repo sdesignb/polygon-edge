@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/helper/hex"
-	"github.com/0xPolygon/polygon-edge/helper/progress"
-	"github.com/0xPolygon/polygon-edge/state"
-	"github.com/0xPolygon/polygon-edge/state/runtime"
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/hashicorp/go-hclog"
+	"github.com/sdesignb/polygon-edge/chain"
+	"github.com/sdesignb/polygon-edge/helper/hex"
+	"github.com/sdesignb/polygon-edge/helper/progress"
+	"github.com/sdesignb/polygon-edge/state"
+	"github.com/sdesignb/polygon-edge/state/runtime"
+	"github.com/sdesignb/polygon-edge/types"
 	"github.com/umbracle/fastrlp"
 )
 
@@ -420,10 +420,19 @@ func (e *Eth) GetStorageAt(
 
 // GasPrice returns the average gas price based on the last x blocks
 func (e *Eth) GasPrice() (interface{}, error) {
-	// Grab the average gas price and convert it to a hex value
-	avgGasPrice := hex.EncodeBig(e.store.GetAvgGasPrice())
 
-	return avgGasPrice, nil
+	// Xiden min gasPrice 100000 wei
+	minGasPrice := big.NewInt(int64(100000))
+
+	// Grab the average gas price
+	storeGasPrice := e.store.GetAvgGasPrice()
+
+	if storeGasPrice.Cmp(minGasPrice) < 0 {
+		return hex.EncodeBig(minGasPrice), nil
+	}
+
+	// Convert gas price and  it to a hex value
+	return hex.EncodeBig(storeGasPrice), nil
 }
 
 // Call executes a smart contract call using the transaction object data

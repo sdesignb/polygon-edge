@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/0xPolygon/polygon-edge/secrets"
 	"github.com/hashicorp/go-hclog"
 	vault "github.com/hashicorp/vault/api"
+	"github.com/sdesignb/polygon-edge/secrets"
 )
 
 // VaultSecretsManager is a SecretsManager that

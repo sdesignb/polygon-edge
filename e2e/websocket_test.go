@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/0xPolygon/polygon-edge/e2e/framework"
-	"github.com/0xPolygon/polygon-edge/jsonrpc"
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/gorilla/websocket"
+	"github.com/sdesignb/polygon-edge/e2e/framework"
+	"github.com/sdesignb/polygon-edge/jsonrpc"
+	"github.com/sdesignb/polygon-edge/types"
 	"github.com/stretchr/testify/assert"
 )
 

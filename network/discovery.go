@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/0xPolygon/polygon-edge/network/grpc"
-	"github.com/0xPolygon/polygon-edge/network/proto"
 	"github.com/libp2p/go-libp2p-core/peer"
 	peerstore "github.com/libp2p/go-libp2p-core/peerstore"
 	kb "github.com/libp2p/go-libp2p-kbucket"
+	"github.com/sdesignb/polygon-edge/network/grpc"
+	"github.com/sdesignb/polygon-edge/network/proto"
 	rawGrpc "google.golang.org/grpc"
 )
 

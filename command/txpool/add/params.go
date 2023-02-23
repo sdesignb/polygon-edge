@@ -2,9 +2,9 @@ package add
 
 import (
 	"fmt"
-	txpoolOp "github.com/0xPolygon/polygon-edge/txpool/proto"
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/golang/protobuf/ptypes/any"
+	txpoolOp "github.com/sdesignb/polygon-edge/txpool/proto"
+	"github.com/sdesignb/polygon-edge/types"
 	"math/big"
 )
 

@@ -10,13 +10,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/helper/hex"
-	"github.com/0xPolygon/polygon-edge/state"
-	itrie "github.com/0xPolygon/polygon-edge/state/immutable-trie"
-	"github.com/0xPolygon/polygon-edge/state/runtime"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/chain"
+	"github.com/sdesignb/polygon-edge/crypto"
+	"github.com/sdesignb/polygon-edge/helper/hex"
+	"github.com/sdesignb/polygon-edge/state"
+	itrie "github.com/sdesignb/polygon-edge/state/immutable-trie"
+	"github.com/sdesignb/polygon-edge/state/runtime"
+	"github.com/sdesignb/polygon-edge/types"
 )
 
 // TESTS is the default location of the tests folder

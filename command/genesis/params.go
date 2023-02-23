@@ -3,14 +3,14 @@ package genesis
 import (
 	"errors"
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/command"
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	"github.com/0xPolygon/polygon-edge/consensus/ibft"
-	"github.com/0xPolygon/polygon-edge/contracts/staking"
-	stakingHelper "github.com/0xPolygon/polygon-edge/helper/staking"
-	"github.com/0xPolygon/polygon-edge/server"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/chain"
+	"github.com/sdesignb/polygon-edge/command"
+	"github.com/sdesignb/polygon-edge/command/helper"
+	"github.com/sdesignb/polygon-edge/consensus/ibft"
+	"github.com/sdesignb/polygon-edge/contracts/staking"
+	stakingHelper "github.com/sdesignb/polygon-edge/helper/staking"
+	"github.com/sdesignb/polygon-edge/server"
+	"github.com/sdesignb/polygon-edge/types"
 )
 
 const (

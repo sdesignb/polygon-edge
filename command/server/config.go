@@ -3,7 +3,7 @@ package server
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/network"
+	"github.com/sdesignb/polygon-edge/network"
 	"io/ioutil"
 	"strings"
 

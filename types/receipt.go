@@ -6,8 +6,8 @@ import (
 
 	goHex "encoding/hex"
 
-	"github.com/0xPolygon/polygon-edge/helper/hex"
-	"github.com/0xPolygon/polygon-edge/helper/keccak"
+	"github.com/sdesignb/polygon-edge/helper/hex"
+	"github.com/sdesignb/polygon-edge/helper/keccak"
 )
 
 type ReceiptStatus uint64

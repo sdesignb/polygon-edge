@@ -8,10 +8,10 @@ import (
 
 	"github.com/umbracle/go-web3"
 
-	"github.com/0xPolygon/polygon-edge/consensus/ibft"
-	"github.com/0xPolygon/polygon-edge/e2e/framework"
-	"github.com/0xPolygon/polygon-edge/helper/tests"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/consensus/ibft"
+	"github.com/sdesignb/polygon-edge/e2e/framework"
+	"github.com/sdesignb/polygon-edge/helper/tests"
+	"github.com/sdesignb/polygon-edge/types"
 	"github.com/stretchr/testify/assert"
 )
 

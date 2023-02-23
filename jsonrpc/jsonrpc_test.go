@@ -1,7 +1,7 @@
 package jsonrpc
 
 import (
-	"github.com/0xPolygon/polygon-edge/helper/tests"
+	"github.com/sdesignb/polygon-edge/helper/tests"
 	"net"
 	"testing"
 

@@ -3,9 +3,9 @@ package snapshot
 import (
 	"bytes"
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	ibftHelper "github.com/0xPolygon/polygon-edge/command/ibft/helper"
-	ibftOp "github.com/0xPolygon/polygon-edge/consensus/ibft/proto"
+	"github.com/sdesignb/polygon-edge/command/helper"
+	ibftHelper "github.com/sdesignb/polygon-edge/command/ibft/helper"
+	ibftOp "github.com/sdesignb/polygon-edge/consensus/ibft/proto"
 )
 
 type IBFTSnapshotVote struct {

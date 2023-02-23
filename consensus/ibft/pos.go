@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/0xPolygon/polygon-edge/contracts/staking"
-	stakingHelper "github.com/0xPolygon/polygon-edge/helper/staking"
-	"github.com/0xPolygon/polygon-edge/state"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/contracts/staking"
+	stakingHelper "github.com/sdesignb/polygon-edge/helper/staking"
+	"github.com/sdesignb/polygon-edge/state"
+	"github.com/sdesignb/polygon-edge/types"
 )
 
 // PoSMechanism defines specific hooks for the Proof of Stake IBFT mechanism

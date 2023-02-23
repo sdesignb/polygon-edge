@@ -1,10 +1,10 @@
 package txpool
 
 import (
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	"github.com/0xPolygon/polygon-edge/command/txpool/add"
-	"github.com/0xPolygon/polygon-edge/command/txpool/status"
-	"github.com/0xPolygon/polygon-edge/command/txpool/subscribe"
+	"github.com/sdesignb/polygon-edge/command/helper"
+	"github.com/sdesignb/polygon-edge/command/txpool/add"
+	"github.com/sdesignb/polygon-edge/command/txpool/status"
+	"github.com/sdesignb/polygon-edge/command/txpool/subscribe"
 	"github.com/spf13/cobra"
 )
 

@@ -3,15 +3,15 @@ package helper
 import (
 	"crypto/ecdsa"
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/helper/common"
-	"github.com/0xPolygon/polygon-edge/network"
-	"github.com/0xPolygon/polygon-edge/secrets"
-	"github.com/0xPolygon/polygon-edge/secrets/awsssm"
-	"github.com/0xPolygon/polygon-edge/secrets/hashicorpvault"
-	"github.com/0xPolygon/polygon-edge/secrets/local"
 	"github.com/hashicorp/go-hclog"
 	libp2pCrypto "github.com/libp2p/go-libp2p-core/crypto"
+	"github.com/sdesignb/polygon-edge/crypto"
+	"github.com/sdesignb/polygon-edge/helper/common"
+	"github.com/sdesignb/polygon-edge/network"
+	"github.com/sdesignb/polygon-edge/secrets"
+	"github.com/sdesignb/polygon-edge/secrets/awsssm"
+	"github.com/sdesignb/polygon-edge/secrets/hashicorpvault"
+	"github.com/sdesignb/polygon-edge/secrets/local"
 	"path/filepath"
 )
 

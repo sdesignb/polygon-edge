@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/0xPolygon/polygon-edge/secrets"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ssm"
 	"github.com/hashicorp/go-hclog"
+	"github.com/sdesignb/polygon-edge/secrets"
 )
 
 // AwsSsmManager is a SecretsManager that

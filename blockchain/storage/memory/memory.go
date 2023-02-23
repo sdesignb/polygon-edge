@@ -1,9 +1,9 @@
 package memory
 
 import (
-	"github.com/0xPolygon/polygon-edge/blockchain/storage"
-	"github.com/0xPolygon/polygon-edge/helper/hex"
 	"github.com/hashicorp/go-hclog"
+	"github.com/sdesignb/polygon-edge/blockchain/storage"
+	"github.com/sdesignb/polygon-edge/helper/hex"
 )
 
 // NewMemoryStorage creates the new storage reference with inmemory

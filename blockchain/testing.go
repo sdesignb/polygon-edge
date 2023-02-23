@@ -5,13 +5,13 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/state"
-	itrie "github.com/0xPolygon/polygon-edge/state/immutable-trie"
 	"github.com/hashicorp/go-hclog"
+	"github.com/sdesignb/polygon-edge/chain"
+	"github.com/sdesignb/polygon-edge/state"
+	itrie "github.com/sdesignb/polygon-edge/state/immutable-trie"
 
-	"github.com/0xPolygon/polygon-edge/types"
-	"github.com/0xPolygon/polygon-edge/types/buildroot"
+	"github.com/sdesignb/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/types/buildroot"
 )
 
 var (

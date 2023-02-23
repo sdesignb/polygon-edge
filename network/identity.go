@@ -8,10 +8,10 @@ import (
 
 	rawGrpc "google.golang.org/grpc"
 
-	"github.com/0xPolygon/polygon-edge/network/grpc"
-	"github.com/0xPolygon/polygon-edge/network/proto"
 	"github.com/libp2p/go-libp2p-core/network"
 	"github.com/libp2p/go-libp2p-core/peer"
+	"github.com/sdesignb/polygon-edge/network/grpc"
+	"github.com/sdesignb/polygon-edge/network/proto"
 	empty "google.golang.org/protobuf/types/known/emptypb"
 )
 

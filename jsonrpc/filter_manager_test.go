@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/hashicorp/go-hclog"
+	"github.com/sdesignb/polygon-edge/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,10 +3,10 @@ package add
 import (
 	"context"
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/command"
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	txpoolOp "github.com/0xPolygon/polygon-edge/txpool/proto"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/command"
+	"github.com/sdesignb/polygon-edge/command/helper"
+	txpoolOp "github.com/sdesignb/polygon-edge/txpool/proto"
+	"github.com/sdesignb/polygon-edge/types"
 	"github.com/spf13/cobra"
 )
 

@@ -3,8 +3,8 @@ package loadbot
 import (
 	"errors"
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/command/loadbot/generator"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/sdesignb/polygon-edge/command/loadbot/generator"
+	"github.com/sdesignb/polygon-edge/types"
 	"math/big"
 	"strings"
 )

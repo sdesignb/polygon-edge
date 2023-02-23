@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/0xPolygon/polygon-edge/network/grpc"
-	"github.com/0xPolygon/polygon-edge/protocol/proto"
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/hashicorp/go-hclog"
 	"github.com/libp2p/go-libp2p-core/peer"
+	"github.com/sdesignb/polygon-edge/network/grpc"
+	"github.com/sdesignb/polygon-edge/protocol/proto"
+	"github.com/sdesignb/polygon-edge/types"
 	any "google.golang.org/protobuf/types/known/anypb"
 	empty "google.golang.org/protobuf/types/known/emptypb"
 )

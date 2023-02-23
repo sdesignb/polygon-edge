@@ -4,13 +4,13 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/0xPolygon/polygon-edge/command"
-	"github.com/0xPolygon/polygon-edge/helper/common"
+	"github.com/sdesignb/polygon-edge/command"
+	"github.com/sdesignb/polygon-edge/helper/common"
 	"github.com/spf13/cobra"
 	"io"
 
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	"github.com/0xPolygon/polygon-edge/server/proto"
+	"github.com/sdesignb/polygon-edge/command/helper"
+	"github.com/sdesignb/polygon-edge/server/proto"
 	empty "google.golang.org/protobuf/types/known/emptypb"
 )
 
