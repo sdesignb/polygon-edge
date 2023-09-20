@@ -5,13 +5,16 @@ import (
 	"errors"
 	"fmt"
 	"math"
+	"math/big"
 	"os"
 	"os/signal"
 	"path/filepath"
+	"strconv"
 	"syscall"
 
+	"strings"
+
 	"github.com/sdesignb/polygon-edge/helper/hex"
-	"github.com/sdesignb/polygon-edge/types"
 )
 
 // Min returns the strictly lower number
@@ -37,7 +40,7 @@ func ConvertUnmarshalledInt(x interface{}) (int64, error) {
 	case float64:
 		return roundFloat(tx), nil
 	case string:
-		v, err := types.ParseUint64orHex(&tx)
+		v, err := ParseUint64orHex(&tx)
 		if err != nil {
 			return 0, err
 		}
@@ -46,6 +49,31 @@ func ConvertUnmarshalledInt(x interface{}) (int64, error) {
 	default:
 		return 0, errors.New("unsupported type for unmarshalled integer")
 	}
+}
+
+func ParseUint64orHex(val *string) (uint64, error) {
+	if val == nil {
+		return 0, nil
+	}
+
+	str := *val
+	base := 10
+
+	if strings.HasPrefix(str, "0x") {
+		str = str[2:]
+		base = 16
+	}
+
+	return strconv.ParseUint(str, base, 64)
+}
+
+// BigMin returns the smallest of x or y.
+func BigMin(x, y *big.Int) *big.Int {
+	if x.Cmp(y) > 0 {
+		return y
+	}
+
+	return x
 }
 
 func roundFloat(num float64) int64 {

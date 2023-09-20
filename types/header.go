@@ -28,6 +28,9 @@ type Header struct {
 	MixHash      Hash
 	Nonce        Nonce
 	Hash         Hash
+
+	// BaseFee was added by EIP-1559 and is ignored in legacy headers.
+	BaseFee uint64 `json:"baseFeePerGas"`
 }
 
 func (h *Header) Equal(hh *Header) bool {

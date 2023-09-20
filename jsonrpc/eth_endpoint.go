@@ -531,6 +531,8 @@ func (e *Eth) EstimateGas(arg *txnArgs, rawNum *BlockNumber) (interface{}, error
 		accountBalance := big.NewInt(0)
 		acc, err := e.store.GetAccount(header.StateRoot, transaction.From)
 
+		// fix error handling
+
 		if err != nil && !errors.As(err, &ErrStateNotFound) {
 			// An unrelated error occurred, return it
 			return nil, err
