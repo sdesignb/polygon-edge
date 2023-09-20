@@ -240,6 +240,10 @@ func (e *Eth) GetTransactionByHash(hash types.Hash) (interface{}, error) {
 		// Find the transaction within the block
 		for idx, txn := range block.Transactions {
 			if txn.Hash == hash {
+
+				// fix gas price for EIP-1559 transactions in JSON-RPC
+				txn.GasPrice = txn.GetGasPrice(block.Header.BaseFee)
+
 				return toTransaction(
 					txn,
 					argUintPtr(block.Number()),
